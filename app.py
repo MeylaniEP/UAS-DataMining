@@ -26,6 +26,9 @@ X = data[features]
 folder_path = 'dist'
 pkl_files = glob.glob(os.path.join(folder_path, '*.pkl'))
 
+# Inisialisasi model_path dengan None
+model_path = None
+
 if pkl_files:
     model_path = pkl_files[0]
 else:
